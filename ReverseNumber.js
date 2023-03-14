@@ -1,7 +1,9 @@
 function reverseanumber(nbrs) {
-    let array = [];
-    let reversenbrs = nbrs.reverse();
-    array.push(reversenbrs);
-    return array;
+    let reverse_array = [];
+    let nbrs_str = nbrs + '';
+    for(let i = nbrs_str.length; i >= 0; i--){
+        reverse_array.push(nbrs_str[i]);
     }
-console.log(reverseanumber(32243))
+    return reverse_array.join('');
+    }
+console.log(reverseanumber(3254))
